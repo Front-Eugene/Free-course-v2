@@ -334,6 +334,7 @@ form {
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 form h2 {
@@ -342,8 +343,10 @@ form h2 {
 }
 
 .messenger-wrap {
+    width: 250px;
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
 }
 
 .contact {
@@ -358,6 +361,7 @@ form h2 {
 }
 
 form input {
+    width: 400px;
     height: 50px;
     border: none;
     border-radius: 10px;
@@ -366,6 +370,7 @@ form input {
     font-size: 20px;
     padding: 5px 15px;
     outline: none;
+    box-sizing: border-box;
 }
 
 .messenger-img {
@@ -373,7 +378,6 @@ form input {
 }
 
 .custom-radio {
-    margin-right: 30px; /* Отступ для псевдоэлемента */
     cursor: pointer;
     position: relative;
 }
