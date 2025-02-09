@@ -594,6 +594,7 @@ form input {
     }
 
     form input {
-        width: 310px;
+        font-size: 15px;
+        width: 255px;
     }
 }
