@@ -66,7 +66,8 @@ li {
     bottom: 0;
     position: absolute;
     border-left: 100vw solid transparent;
-    border-bottom: 150px solid #c76d03;
+    /* border-bottom: 150px solid #c76d03; */
+    border-bottom: 150px solid #c76d03a6;
     z-index: 20;
 }
 
@@ -77,7 +78,8 @@ li {
     left: 0;
     position: absolute;
     border-right: 100vw solid transparent;
-    border-top: 150px solid #c76d03;
+    /* border-top: 150px solid #c76d03; */
+    border-top: 150px solid #c76d03a6;
     
     z-index: 20;
 }
@@ -149,9 +151,9 @@ ul li span {
 }
 
 .face {
-    width: 800px;
-    margin-top: -5px;
-    /* filter: drop-shadow(0 0 25px #fff); */
+    width: 600px;
+    margin-top: -12px;
+    transform: rotate(-6deg);
 }
 
 .btn {
@@ -191,8 +193,7 @@ ul li span {
 .for {
     padding: 50px;
     color: #fff;
-    margin-top: -0.3px;
-    background: #c76d03;
+    background: #c76d03a6;
 }
 
 .for-wrap {
@@ -462,7 +463,7 @@ form input {
 
     .triangle {
         z-index: 10;
-        border-bottom: 100px solid #c76d03
+        border-bottom: 100px solid #c76d03a6;
     }
 
     .for {
@@ -496,8 +497,7 @@ form input {
     }
 
     .triangle-2 {
-        top: -0.5px;
-        border-top: 100px solid #c76d03;
+        border-top: 100px solid #c76d03a6;
     }
 
     .program {
