@@ -440,14 +440,15 @@ form input {
     }
 
     .screen-wrap h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .screen-wrap h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     li {
+        width: 300px;
         flex-wrap: wrap;
         font-size: 15px;
     }
@@ -456,7 +457,7 @@ form input {
         position: relative;
         bottom: 0;
         left: 20px;
-        margin: 20px 0 60px 0;
+        margin: 20px 0 150px 0;
     }
 
     .triangle {
@@ -590,5 +591,9 @@ form input {
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
+    }
+
+    form input {
+        width: 310px;
     }
 }
