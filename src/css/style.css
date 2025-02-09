@@ -282,8 +282,8 @@ ul li span {
 
 .why {
     padding: 50px 0;
-    background: #021537;
     background: #c76d03;
+    background: #c76d03a6;
 }
 
 .lecturer {
@@ -309,9 +309,8 @@ ul li span {
     padding: 50px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    background: #021537;
     background: #c76d03;
+    background: #c76d03a6;
 }
 
 .last h2 {
@@ -348,9 +347,9 @@ form h2 {
 
 .contact {
     width: 100%;
-    margin: 50px 0;
-    background: #021537;
+    margin: 50px 0 0 0;
     background: #c76d03;
+    background: #c76d03a6;
 }
 
 .contact .section-wrap {
