@@ -126,6 +126,10 @@ li {
     padding-top: 50px;
 }
 
+.screen-text h1 {
+    text-transform: uppercase;
+}
+
 .screen-text span {
     color: #fdbf01;
     /* text-decoration: underline; */
@@ -173,7 +177,7 @@ ul li span {
 .screen-btn {
     position: absolute;
     z-index: 30;
-    bottom: 100px;
+    bottom: 50px;
     left: 50px;
 }
 
@@ -442,7 +446,7 @@ form input {
     }
 
     .screen-wrap h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .screen-wrap h2 {
