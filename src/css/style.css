@@ -235,6 +235,8 @@ ul li span {
 .program h2 {
     font-size: 35px;
     text-align: center;
+    text-transform: uppercase;
+    color: #fdbf01;
 }
 
 .program-wrap h2 {
