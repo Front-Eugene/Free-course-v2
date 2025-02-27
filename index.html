@@ -199,7 +199,7 @@
                     <div class="tel-input-container">
                         <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефона" required>
                     </div>
-                    <p style="margin-top: 20px;">Выберите мессенджер</p>
+                    <!-- <p style="margin-top: 20px;">Выберите мессенджер</p>
                     <div class="messenger-wrap">
                         <label class="custom-radio">
                             <input type="radio" name="messenger" value="telegram" required>
@@ -222,7 +222,7 @@
                             </div>
                             <img class="messenger-img" src="src/img/whatsapp.png" alt="">
                         </label>
-                    </div>
+                    </div> -->
                     <a href="#tg-form">
                         <button type="submit" class="btn">Записаться</button>
                     </a>
@@ -265,11 +265,11 @@
             message += `<b>Телефон:</b> ${countryCode} ${this.phone.value} \n`; // Добавляем код страны перед номером
 
             // Получаем выбранный мессенджер
-            const selectedMessenger = this.messenger.value;
-            message += `<b>Мессенджер:</b> ${selectedMessenger} \n`;
+            // const selectedMessenger = this.messenger.value;
+            // message += `<b>Мессенджер:</b> ${selectedMessenger} \n`;
 
             // Validate name, phone number, and messenger selection
-            if (this.name.value === '' || this.phone.value === '' || !this.messenger.value) {
+            if (this.name.value === '' || this.phone.value === '' || this.mail.value === '') {
                 alert('Имя, номер телефона и выбор мессенджера обязательны');
                 return; // Stop form submission if validation fails
             }
