@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css" />
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <!-- <script src="axios.min.js"></script> -->
     <script src="jslocal.js"></script>
@@ -306,6 +306,47 @@
             //         // Handle the error here if needed
             //     });
 
+
+
+
+
+
+            // fetch(URI_API, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({
+            //         chat_id: CHAT_ID,
+            //         parse_mode: 'html',
+            //         text: message
+            //     })
+            // })
+            //     .then((res) => {
+            //         if (!res.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+            //         return res.json();
+            //     })
+            //     .then(() => {
+            //         this.name.value = '';
+            //         this.phone.value = '';
+            //         this.mail.value = '';
+            //         this.messenger.value = '';
+
+            //         window.location.href = 'thanks.html';
+
+            //         let noBtn = document.querySelector('.click-btn');
+            //         noBtn.addEventListener('click', function () {
+            //             noBtn.classList.add('remove');
+            //             noBtn.disabled = true;
+            //         });
+            //     })
+            //     .catch((error) => {
+            //         console.error('Error sending message to Telegram:', error);
+            //         // Handle the error here if needed
+            //     });
+
             fetch(URI_API, {
                 method: 'POST',
                 headers: {
@@ -318,29 +359,25 @@
                 })
             })
                 .then((res) => {
+                    console.log('Response:', res); // Логируем ответ сервера
                     if (!res.ok) {
-                        throw new Error('Network response was not ok');
+                        throw new Error(`Network response was not ok, status: ${res.status}`);
                     }
-                    return res.json();
+                    return res.json().catch(() => {
+                        throw new Error('Invalid JSON response');
+                    });
                 })
                 .then(() => {
-                    this.name.value = '';
-                    this.phone.value = '';
-                    this.mail.value = '';
-                    this.messenger.value = '';
+                    // Очищаем поля формы
+                    document.querySelector('form').reset();
 
+                    // Перенаправляем на страницу "thanks.html"
                     window.location.href = 'thanks.html';
-
-                    let noBtn = document.querySelector('.click-btn');
-                    noBtn.addEventListener('click', function () {
-                        noBtn.classList.add('remove');
-                        noBtn.disabled = true;
-                    });
                 })
                 .catch((error) => {
                     console.error('Error sending message to Telegram:', error);
-                    // Handle the error here if needed
                 });
+
 
         })
     </script>
